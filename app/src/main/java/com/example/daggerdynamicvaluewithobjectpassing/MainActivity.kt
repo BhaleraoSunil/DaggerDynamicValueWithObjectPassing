@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //here we are creating notification service module object and
+        //passing to component
         val component = DaggerUserRegistrationComponent
             .builder()
             .notificationServiceModule(NotificationServiceModule(3))

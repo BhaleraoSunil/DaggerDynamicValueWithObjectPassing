@@ -8,10 +8,7 @@ import dagger.Provides
 class NotificationServiceModule(private val retryCount:Int) {
 
 
-    //example of  annotation qualifier.
-    // To avoid typo mistakes, we will use annotation qualifier
 
-   // @Named("message")
     @MessageQualifier
     @Provides
     fun getMessageService():NotificationService{
